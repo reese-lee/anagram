@@ -1,37 +1,17 @@
 using System;
 using System.Collections.Generic;
 
-namespace ToDoList.Models
+namespace Anagram.Models
 {
-  public class Item
+  public class Word
   {
-    private string _description;
-    private static List<Item> _instances = new List<Item>{};
+    private string _userWord;
+    // private static List<Word> _wordDirectory = new List<Word>{};
 
-    public Item (string description)
+    public Word (string userWord)
     {
-      _description = description;
-      _instances.Add(this);
-    }
-
-    public string GetDescription()
-    {
-      return _description;
-    }
-
-    public void SetDescription(string newDescription)
-    {
-      _description = newDescription;
-    }
-
-    public static List<Item> GetAll()
-    {
-      return _instances;
-    }
-
-    public static void ClearAll()
-    {
-      _instances.Clear();
+      _userWord = userWord;
+      // _wordDirectory.Add(this);
     }
   }
 }
