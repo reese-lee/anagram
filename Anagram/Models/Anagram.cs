@@ -13,5 +13,7 @@ namespace Anagram.Models
       _userWord = userWord;
       // _wordDirectory.Add(this);
     }
+
+    // public
   }
 }

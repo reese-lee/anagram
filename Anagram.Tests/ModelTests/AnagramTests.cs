@@ -21,5 +21,15 @@ namespace Anagram.Tests
       Assert.AreEqual(typeof(Word), newWord.GetType());
     }
 
+    [TestMethod]
+    public void CharArray_ConvertStringToAnArray_True()
+    {
+      string newWord = "glug";
+      char[] wordArray = newWord.ToCharArray();
+      Console.WriteLine(wordArray);
+      char[] testArray = { 'g', 'l', 'u', 'g' };
+      Assert.AreEqual(wordArray.GetType(), testArray.GetType());
+    }
+
   }
 }
